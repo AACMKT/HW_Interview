@@ -43,9 +43,7 @@ def is_brackets_balanced(str_with_brackets):
 
     stack_origin = Stack(str_with_brackets)
     new_stack = Stack('')
-    counter = 0
     while not stack_origin.is_empty():
-        counter += 1
         brackets = {')': '(', '}': '{', ']': '['}
 
         if stack_origin.peek() in brackets.keys():
